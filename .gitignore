@@ -1,0 +1,95 @@
+# Local development (logs, sim, Quartus temp, reverse engineering)
+_dev/
+
+# Quartus output (se Quartus rigenera in root)
+output_files/
+db/
+incremental_db/
+*.qws
+*.rpt
+*.smsg
+*.summary
+*.jdi
+*.pin
+*.sof
+*.sld
+*.done
+c5_pin_model_dump.txt
+
+# Build logs
+*.log
+build_log.txt
+fb_output.log
+
+# Editor / AI tools
+.claude/
+.vscode/
+.idea/
+transcript
+
+# Tcl scripts di analisi temporanei
+_sta_*.tcl
+_sta_*.txt
+
+# Sim temp (se rigenerato in sim/)
+sim/work/
+sim/transcript
+sim/vsim.wlf
+sim/modelsim.ini
+sim/*.log
+sim/*.hex
+
+# ROM binaries (mai committare)
+*.zip
+rom/
+sim/c[0-9]*
+
+# JTAG config locale
+jtag.cdf
+
+# Internal MRA generation tools
+releases/_gen_variants.pl
+releases/_template.mra
+
+# ROM dumps
+docs/reverse_engineering/main68k.bin
+docs/reverse_engineering/*.bin
+
+# ── Caccia bug walkable/COP (temporanei, non versionare) ──
+# Archivio roba vecchia
+_archive/
+rtl/Legionnaire/_archive/
+rtl/fx68k/_hdl_unused/
+work/
+
+# ROM main 68k in sim (mai committare)
+sim/legionna_main.bin
+sim/*.bin
+
+# Reference MAME scaricato (upstream, non parte del progetto)
+reference/mame_latest/
+
+# Sim sqrt / cop3_coll temp
+sim/work_sqrt/
+sim/cop3_coll/
+sim/tb_sqrt.sv
+
+# Dump disasm grezzi
+docs/cop3_reverse/11_FULL_DISASM.txt
+
+# Tcl report timing temporaneo
+report_worst.tcl
+
+# File info temporanei
+serv_req_info.txt
+cr_ie_info.json
+
+# Reference MAME (sorgenti terzi, solo per studio locale - mai committare)
+reference/
+
+# Testbench sim (materiale di caccia bug, solo locale)
+sim/legionnaire_boot_tb.sv
+
+# Archivio script di debug/analisi (find_*.py, sim/*.py, *.do) delle cacce ai bug.
+# Tenuti localmente per riferimento storico, fuori dal repo (inerti, non in build).
+_debug_archive/
