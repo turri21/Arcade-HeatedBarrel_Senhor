@@ -1,3 +1,8 @@
+-=(HeatedBarrel_Senhor notes)=-
+
+Tested: Working Video 720p, 1080p & Sound.
+
+___
 # Arcade-HeatedBarrel_MiSTer
 
 FPGA core for **Heated Barrel** (TAD Corporation / Seibu, 1992) targeting the
